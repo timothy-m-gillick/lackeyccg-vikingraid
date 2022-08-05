@@ -1,0 +1,112 @@
+<plugin>
+
+<playerstat>
+	<label>Completed Raids</label>
+	<initialvalue>0</initialvalue>
+</playerstat>
+<playerstat>
+	<label>Gold</label>
+	<initialvalue>10</initialvalue>
+</playerstat>
+
+<deckzone>
+	<label>Viking Deck</label>
+	<gamezonetoloadto>Viking Deck</gamezonetoloadto>
+	<shuffle>yes</shuffle>
+</deckzone>
+
+<deckzone>
+     <label>Encounter Deck</label>
+     <gamezonetoloadto>Encounter Deck</gamezonetoloadto>
+     <shuffle>yes</shuffle>
+</deckzone>
+
+<gamezone>
+     <label>Hand</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+
+
+<gamezone>
+     <label>Viking Deck</label>
+     <isshared>yes</isshared>
+</gamezone>
+<gamezone>
+     <label>Encounter Deck</label>
+     <isshared>yes</isshared>
+</gamezone>
+
+<gamezone>
+     <label>Viking Discard</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+</gamezone>
+<gamezone>
+     <label>Encounter Discard</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+</gamezone>
+
+
+<phase><label>Planning Phase</label></phase>
+<phase><label>Declaration Phase</label></phase>
+<phase><label>Preparations Phase</label></phase>
+<phase><label>Voyage Attack Phase</label></phase>
+<phase><label>Tactics Phase</label></phase>
+<phase><label>Pillage Phase</label></phase>
+<phase><label>Plunder Phase</label></phase>
+<phase><label>Return Phase</label></phase>
+<phase><label>Home Phase</label></phase>
+
+<generalfunction>
+	<label>Draw Card</label>
+	<kind>TRANSFERCARD</kind>
+	<sourceowner>shared</sourceowner>
+	<sourcegamezone>Viking Deck</sourcegamezone>
+	<sourceposition>top</sourceposition>
+	<destinationgamezone>Hand</destinationgamezone>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+
+
+<generalfunction>
+	<label>Draw Encounter</label>
+	<kind>TRANSFERCARD</kind>
+	<sourceowner>shared</sourceowner>
+	<sourcegamezone>Encounter Deck</sourcegamezone>
+	<sourceposition>top</sourceposition>
+	<destinationgamezone>Hand</destinationgamezone>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+
+
+<generalfunction>
+	<label>Previous Phase</label>
+	<kind>PREVIOUSPHASE</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+<generalfunction>
+	<label>Next Phase</label>
+	<kind>NEXTPHASE</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+<generalfunction>
+	<label>Previous Turn</label>
+	<kind>PREVIOUSTURN</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+<generalfunction>
+	<label>Next Turn</label>
+	<kind>NEXTTURN</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+
+</generalfunction>
+
+<generalfunction><label>Roll Die</label><kind>ROLLD6</kind><includeasbutton>yes</includeasbutton></generalfunction>
+
+</plugin>
