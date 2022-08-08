@@ -1,0 +1,5 @@
+VikingRaid	08-03-22
+plugins/VikingRaid/plugininfo.txt	https://github.com/timothy-m-gillick/lackeyccg-vikingraid/raw/main/plugininfo.txt	256667
+plugins/VikingRaid/sets/setimages/general/cardback.jpg	https://github.com/timothy-m-gillick/lackeyccg-vikingraid/raw/main/cardback.jpg	501920
+CardGeneralURLs:		
+https://drive.google.com/drive/folders/1hoNkc9-AnI74hoUuL1ZQvFZ6k_sbN4mJ?usp=sharing
